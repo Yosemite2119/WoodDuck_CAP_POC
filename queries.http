@@ -1,0 +1,27 @@
+GET http://localhost:4004/catalog/Interactions_Header
+
+####
+POST http://localhost:4004/catalog/Interactions_Header
+Content-Type: application/json
+
+  {
+      "ID": 7,
+      "PARTNER": "0100000006",
+      "BPCOUNTRY_code": "US"
+    }
+
+
+####
+PATCH  http://localhost:4004/catalog/Interactions_Header(5)
+Content-Type: application/json
+Accept: application/json
+
+  {
+      "BPCOUNTRY_code": "US"
+    }
+
+###
+DELETE  http://localhost:4004/catalog/Interactions_Header(7)
+Content-Type: application/json
+Accept: application/json
+ 
